@@ -1,0 +1,24 @@
+"C:\Program Files\Python313\python.exe" G:\11229a050\OSI.py 
+Original Message: Hello, Network!
+
+Encapsulation Process (Sender Side):
+Physical Layer: [Physical Layer Header] -> Hello, Network!
+Data Link Layer: [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Network Layer: [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Transport Layer: [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Session Layer: [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Presentation Layer: [Presentation Layer Header] -> [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Application Layer: [Application Layer Header] -> [Presentation Layer Header] -> [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+
+Decapsulation Process (Receiver Side):
+Application Layer: [Application Layer Header] -> [Presentation Layer Header] -> [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Presentation Layer: [Presentation Layer Header] -> [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Session Layer: [Session Layer Header] -> [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Transport Layer: [Transport Layer Header] -> [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Network Layer: [Network Layer Header] -> [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Data Link Layer: [Data Link Layer Header] -> [Physical Layer Header] -> Hello, Network!
+Physical Layer: [Physical Layer Header] -> Hello, Network!
+
+Received Message: Hello, Network!
+
+Process finished with exit code 0
